@@ -1,0 +1,17 @@
+version: "2.0"
+
+responses:
+  utter_academic_deanslist_what:
+  - text: "You are asking about DEANSLIST"
+
+  utter_academic_gpa_grade:
+  - text: "You are asking about GPA"
+
+  utter_academic_scholarships:
+  - text: "You are asking about SCHOLARSHIPS"
+
+  utter_academic_viva_what:
+  - text: "You are asking about VIVA"
+
+  utter_fallback:
+  - text: "Sorry, I did not understand"

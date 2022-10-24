@@ -1,0 +1,25 @@
+version: "2.0"
+
+intents:
+  - academic_deanslist_what
+  - academic_gpa_grade
+  - academic_scholarships
+  - academic_viva_what
+  - degrees_degrees_offered
+  - degrees_foundation_course
+  - degrees_entry_requirements
+  - degrees_gpa_requirements
+  - degrees_class_requirements
+  - degrees_orientation
+  - degrees_duration
+  - degrees_registration
+  - degrees_intakes
+  - degrees_transfer_programmes
+  - degrees_modules
+  - degrees_semester_payment
+  - degrees_semester_payment_penalty
+  - degrees_semester_timetables
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

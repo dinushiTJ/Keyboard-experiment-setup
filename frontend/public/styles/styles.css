@@ -1,0 +1,27 @@
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+a:hover {
+  color: #4CAF50 !important;
+}
+
+.kbdg {
+  background-color: #4CAF50;
+}
+
+.kbdr {
+  background-color: #F44336;
+}
+
+.bottom-div {
+  background-color: white;
+}
+
+.info-box {
+  background-color: #546E7A;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+}

@@ -1,0 +1,26 @@
+language: en
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 25
+    evaluate_every_number_of_epochs: 1
+    evaluate_on_number_of_examples: 30
+    tensorboard_log_directory: ./tensorboard
+    tensorboard_log_level: epoch
+    constrain_similarities: true
+    transformer_size: 128
+  - name: FallbackClassifier
+    threshold: 0.7
+    ambiguity_threshold: 0.1
+
+policies:
+  - name: MemoizationPolicy
+  - name: RulePolicy
